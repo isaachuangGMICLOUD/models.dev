@@ -5,6 +5,7 @@ reasoning_options = [{ type = "budget_tokens", min = 1_024, max = 127_999 }]
 input = 5
 output = 25
 cache_read = 0.5
+cache_write = 6.25
 
 [limit]
 context = 409_600

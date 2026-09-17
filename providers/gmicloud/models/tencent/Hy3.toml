@@ -1,0 +1,13 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=262144; quantization=bf16.
+base_model = "tencent/hy3"
+reasoning_options = []
+
+[cost]
+input = 0.14
+output = 0.58
+cache_read = 0.035
+
+[limit]
+context = 262_144

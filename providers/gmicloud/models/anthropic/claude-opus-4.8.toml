@@ -7,3 +7,7 @@ reasoning_options = [{ type = "effort", values = ["low", "medium", "high", "xhig
 input = 5
 output = 25
 cache_read = 0.5
+cache_write = 6.25
+
+[limit]
+context = 409_600

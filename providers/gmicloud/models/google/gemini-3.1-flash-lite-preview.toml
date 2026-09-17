@@ -1,0 +1,14 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=1048576; quantization=fp8.
+base_model = "google/gemini-3.1-flash-lite-preview"
+reasoning_options = []
+
+[cost]
+input = 0.25
+output = 1.5
+cache_read = 0.025
+cache_write = 0.083
+
+[limit]
+context = 1_048_576

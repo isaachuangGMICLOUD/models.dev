@@ -1,0 +1,16 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=163840; quantization=fp8.
+base_model = "deepseek/deepseek-v3.2"
+reasoning_options = []
+
+[interleaved]
+field = "reasoning_content"
+
+[cost]
+input = 0.29
+output = 0.43
+cache_read = 0.03
+
+[limit]
+context = 163_840

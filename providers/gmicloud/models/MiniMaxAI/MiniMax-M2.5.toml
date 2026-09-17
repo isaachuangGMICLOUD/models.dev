@@ -1,0 +1,13 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=196608; quantization=fp8.
+base_model = "minimax/MiniMax-M2.5"
+reasoning_options = []
+
+[cost]
+input = 0.3
+output = 1.2
+cache_read = 0.03
+
+[limit]
+context = 196_608

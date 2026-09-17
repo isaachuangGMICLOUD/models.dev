@@ -1,0 +1,12 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=131072; quantization=fp8.
+base_model = "openai/gpt-oss-120b"
+reasoning_options = []
+
+[cost]
+input = 0.05
+output = 0.25
+
+[limit]
+context = 131_072

@@ -1,0 +1,14 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=65536; quantization=bf16.
+base_model = "nvidia/nemotron-3.5-lightning"
+reasoning_options = []
+
+[cost]
+input = 0.15
+output = 1
+cache_read = 0.05
+
+[limit]
+context = 65_536
+output = 65_536

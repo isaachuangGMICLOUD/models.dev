@@ -1,0 +1,11 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=262144; quantization=fp8.
+base_model = "alibaba/qwen3-next-80b-a3b-instruct"
+
+[cost]
+input = 0.15
+output = 1.5
+
+[limit]
+context = 262_144

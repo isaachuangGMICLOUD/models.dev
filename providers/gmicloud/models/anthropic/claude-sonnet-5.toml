@@ -1,0 +1,14 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=409600; quantization=fp8.
+base_model = "anthropic/claude-sonnet-5"
+reasoning_options = []
+
+[cost]
+input = 2
+output = 10
+cache_read = 0.2
+cache_write = 2.5
+
+[limit]
+context = 409_600

@@ -1,0 +1,17 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=409600; quantization=fp8.
+base_model = "openai/gpt-5.4-pro"
+reasoning_options = []
+
+[cost]
+input = 30
+output = 180
+
+[[cost.tiers]]
+tier = { type = "context", size = 272_000 }
+input = 60
+output = 270
+
+[limit]
+context = 409_600

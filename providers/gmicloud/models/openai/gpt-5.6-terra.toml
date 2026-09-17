@@ -1,0 +1,21 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=1050000; quantization=fp8.
+base_model = "openai/gpt-5.6-terra"
+reasoning_options = []
+
+[cost]
+input = 2.5
+output = 15
+cache_read = 0.25
+cache_write = 3.125
+
+[[cost.tiers]]
+tier = { type = "context", size = 272_000 }
+input = 5
+output = 22.5
+cache_read = 0.5
+cache_write = 6.25
+
+[limit]
+context = 1_050_000

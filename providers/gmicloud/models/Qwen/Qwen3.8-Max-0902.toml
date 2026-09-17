@@ -1,0 +1,14 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=262144; quantization=fp8.
+base_model = "alibaba/qwen3.8-max-0902"
+reasoning_options = []
+
+[cost]
+input = 1.65
+output = 4.951
+cache_read = 0.206
+cache_write = 2.063
+
+[limit]
+context = 262_144

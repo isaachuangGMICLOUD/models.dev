@@ -1,0 +1,15 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=262144; quantization=fp8.
+base_model = "moonshotai/kimi-k2.5"
+reasoning_options = []
+
+[interleaved]
+field = "reasoning_content"
+
+[cost]
+input = 0.6
+output = 3
+
+[limit]
+context = 262_144

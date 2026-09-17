@@ -1,0 +1,15 @@
+# Sources verified 2026-09-17:
+# Authenticated GET https://api.gmi-serving.com/v1/models returned
+# context_length=1048576, quantization=fp8, prompt=0.000010000,
+# completion=0.000050000, and input_cache_read=0.000000250.
+# A POST /v1/chat/completions probe returned HTTP 200 for this model ID.
+base_model = "anthropic/claude-fable-5-1"
+reasoning_options = []
+
+[cost]
+input = 10
+output = 50
+cache_read = 0.25
+
+[limit]
+context = 1_048_576

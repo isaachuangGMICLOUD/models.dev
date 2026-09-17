@@ -1,0 +1,13 @@
+# Source: authenticated GET https://api.gmi-serving.com/v1/models
+# Verified 2026-09-17.
+# Catalog metadata: context_length=262144; quantization=fp8.
+base_model = "google/gemma-4-31b-it"
+reasoning_options = []
+
+[cost]
+input = 0.14
+output = 0.4
+cache_read = 0.1
+
+[limit]
+context = 262_144
