@@ -1,18 +1,13 @@
 # Source: authenticated GET https://api.gmi-serving.com/v1/models
 # Verified 2026-09-17.
 # Catalog metadata: context_length=163840; quantization=fp8.
+base_model = "deepseek/deepseek-r1"
 name = "DeepSeek-R1-0528"
 description = "DeepSeek reasoning model for multi-step analysis, math, coding, and tools"
-family = "deepseek-thinking"
 release_date = "2025-05-28"
 last_updated = "2025-05-28"
-attachment = false
-reasoning = true
-temperature = true
-tool_call = true
 structured_output = true
 knowledge = "2025-05"
-open_weights = true
 reasoning_options = []
 
 [interleaved]
@@ -26,7 +21,3 @@ cache_read = 0.23
 [limit]
 context = 163_840
 output = 64_000
-
-[modalities]
-input = ["text"]
-output = ["text"]
